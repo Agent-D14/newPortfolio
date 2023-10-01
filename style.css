@@ -21,6 +21,7 @@
 .bkgrd-container{
   position: relative;
   top: 0;
+  background-color: #0B0205;
 }
   ul, li {
     margin: 0;
