@@ -22,6 +22,7 @@
   position: relative;
   top: 0;
   background-color: #0B0205;
+  
 }
   ul, li {
     margin: 0;
@@ -33,6 +34,7 @@
     grid-template-columns: repeat(5, 1fr) 1.2fr 1.2fr 0.5fr;
     grid-template-rows: 7vw repeat(5, 7vw) 7vw 6.5vw 6.5vw;
     box-shadow: 1px 3px 8px rgba(0,0,0,0.5);
+    overflow: hidden;
   }
   li {
     height: 100%;
@@ -139,3 +141,92 @@
     border-bottom: none;
   }
   
+  /*SLIDE ANIMATION*/
+  .slide-left {
+    width:100%;
+    overflow:hidden;
+    animation: slide-left 5s;
+    padding-left: 30px;
+    font-size: 100px;
+    font-weight: 200;
+  }
+  
+  @keyframes slide-left {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  .slide-up {
+    height:200px;
+    overflow:hidden;
+    animation: 5s slide-up;
+    margin-top: -5%;
+    padding-left: 30px;
+    font-size: 30px;
+    font-weight: 100;
+  }
+  
+  @keyframes slide-up {
+    from {
+      margin-top: 100%;
+      height: 300%; 
+    }
+  
+    to {
+      margin-top: -5%;
+      height: 100%;
+    }
+  }
+
+  /*PROJECTS*/
+  .project1{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .projects .header{
+    text-align: center;
+    padding: 70px;
+  }
+  .projects img{
+    border: #0B0205 2px solid;
+    width: 700px;
+  }
+  .projects button{
+    margin-bottom: 30px;
+  }
+
+
+  /*ABOUT*/
+  .about .header{
+    text-align: center;
+    height: 500px;
+    padding: 70px;
+    background-color: rgb(233, 231, 231);
+  }
+
+  /*MEDIA QUERIES*/
+
+  @media screen and (max-width: 780px) {
+    .slide-left {
+      font-size: 75px;
+    }
+    .slide-up{
+      font-size: 20px;
+    }
+  }
+  @media screen and (max-width: 470px) {
+    .slide-left {
+      font-size: 50px;
+    }
+    .slide-up{
+      font-size: 15px;
+    }
+  }
