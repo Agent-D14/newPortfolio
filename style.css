@@ -4,18 +4,7 @@
   html {
     background: rgb(233, 231, 231); 
   }
-  .menu{
-    background-color: transparent
-  }
-  .nav-item{
-    background-color: transparent;
-    border: none;
-    color: #0B0205;
-  }
-  .nav-link{
-    color: black;
-    background-color: transparent;
-  }
+  
 
 /*BACKGROUND*/
 .bkgrd-container{
@@ -43,13 +32,13 @@
   }
   li:nth-child(1) {
     grid-column: span 2;
-    background-color: #E5EEEB; 
+    background-color: white; 
     border-top: none;
     border-left: none;
   }
   li:nth-child(2) {
     grid-column: span 3;
-    background-color: #F2E7D5;
+    background-color: #241785;
     border-top: none;
   }
   li:nth-child(3) {
@@ -59,13 +48,13 @@
   }
   li:nth-child(4) {
     grid-row: span 6;
-    background-color: #FCFDE7;
+    background-color: white;
     border-top: none;
     border-right: none;
   }
   li:nth-child(5) {
     grid-row: span 2;
-    background-color: #FBFDE7;
+    background-color: white;
     border-left: none;
   }
   li:nth-child(6) {
@@ -80,16 +69,16 @@
   }
   li:nth-child(8) {
     grid-row: span 3;
-    background-color: #E1EAE5;
+    background-color: white;
     border-left: none;
   }
   li:nth-child(9) {
     grid-row: span 2;
-    background-color: #DFE5D0;
+    background-color: white;
   }
   li:nth-child(10) {
     grid-row: span 2;
-    background-color: #F2EEE2;
+    background-color: white;
   }
   li:nth-child(11) {
     grid-row: span 2;
@@ -98,11 +87,11 @@
   }
   li:nth-child(12) {
     grid-column: span 2;
-    background-color: #C0BFBA;
+    background-color: white;
   }
   li:nth-child(13) {
     grid-column: span 2;
-    background-color: #D6DEE0;
+    background-color: white;
   }
   li:nth-child(14) {
     grid-row: span 3;
@@ -112,7 +101,7 @@
   }
   li:nth-child(15) {
     grid-column: span 2;
-    background-color: #DEE2D4;
+    background-color: white;;
   }
   li:nth-child(16) {
     grid-row: span 2;
@@ -128,7 +117,7 @@
   li:nth-child(18) {
     grid-column: span 2;
     grid-row: span 2;
-    background-color: #E3DED9;
+    background-color: white;
     border-bottom: none;
   }
   li:nth-child(19) {
@@ -137,7 +126,7 @@
   }
   li:nth-child(20) {
     grid-column: span 4;
-    background-color: #E0E0DF;
+    background-color: white;
     border-bottom: none;
   }
   
@@ -149,6 +138,7 @@
     padding-left: 30px;
     font-size: 100px;
     font-weight: 200;
+    color: white;
   }
   
   @keyframes slide-left {
@@ -170,6 +160,7 @@
     padding-left: 30px;
     font-size: 30px;
     font-weight: 100;
+    color: white;
   }
   
   @keyframes slide-up {
@@ -184,7 +175,23 @@
     }
   }
 
+  .menu li{
+    background-color: transparent
+  }
+  .nav-item{
+    background-color: transparent;
+    border: none;
+    color: #0B0205;
+  }
+  .nav-link{
+    color: black;
+    background-color: transparent;
+  }
+
   /*PROJECTS*/
+  .projects{
+    background-color: rgb(233, 231, 231);
+  }
   .project1{
     display: block;
     justify-content: center;
@@ -200,16 +207,49 @@
     width: 700px;
   }
   .projects button{
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    border: #241785 solid 3px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
   }
 
 
   /*ABOUT*/
-  .about .header{
-    text-align: center;
+  .about{
     height: 500px;
     padding: 70px;
+    margin-bottom: 30px;
+  }
+  .about .header{
+    text-align: center;
+    
+  }
+  .about .info{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .about video{
+    width: 600px;
+    margin: 20px;
+  }
+  .about p{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 100px;
+  }
+
+  /*FOOTER*/
+  .footer{
     background-color: rgb(233, 231, 231);
+    height: 100px;
+  }
+  .footer h4{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
   }
 
   /*MEDIA QUERIES*/
@@ -220,6 +260,9 @@
     }
     .slide-up{
       font-size: 20px;
+    }
+    .about video{
+    width: 400px;
     }
   }
   @media screen and (max-width: 470px) {
